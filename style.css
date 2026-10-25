@@ -1,0 +1,27 @@
+@font-face { font-family: "Archivo"; src: url("fonts/Archivo-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Archivo"; src: url("fonts/Archivo-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Archivo"; src: url("fonts/Archivo-ExtraBold.ttf"); font-weight: 800; }
+@font-face { font-family: "Archivo"; src: url("fonts/Archivo-ExtraBoldItalic.ttf"); font-weight: 800; font-style: italic; }
+
+:root { color-scheme: dark; --bg: #22262B; --card: #2E3339; --text: #F3F1EC; --muted: #B5BAC0; --line: #464C54;
+        --green: #2BA45F; --yellow: #FFD700; --pink: #F453AD; --red: #E0353D; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 18px/1.6 "Archivo", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+header { display: flex; align-items: center; gap: 20px; margin-bottom: 32px; }
+header img { width: 88px; height: 88px; border-radius: 20px; }
+h1 { font-weight: 800; font-size: 40px; line-height: 1.1; margin: 0; letter-spacing: -0.02em; }
+h1 em { font-style: italic; }
+h2 { font-weight: 800; font-size: 24px; margin: 40px 0 8px; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+a { color: var(--yellow); }
+nav { display: flex; gap: 20px; margin: 0 0 32px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+nav a { color: var(--muted); text-decoration: none; font-weight: 700; }
+nav a[aria-current="page"], nav a:hover { color: var(--text); }
+.dots { display: flex; gap: 8px; margin: 8px 0 0; }
+.dots span { width: 14px; height: 14px; border-radius: 50%; display: block; }
+.card { background: var(--card); border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
+.card h3 { margin: 0 0 4px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
